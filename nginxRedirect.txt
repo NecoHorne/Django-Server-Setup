@@ -1,0 +1,8 @@
+#/etc/nginx/sites-available/<mysite2> this is a permanent redirect if you have more than one domian pointing to the server.
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name domain1.com;
+    rewrite ^/(.*)$ https://www.domain2.com/$1 permanent;
+}
