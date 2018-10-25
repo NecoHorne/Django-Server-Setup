@@ -33,7 +33,7 @@ replace values surounded by <> with your own values
 
 `adduser <username>`
 
-`usermod -a -G sudo necoh`
+`usermod -a -G sudo <username>`
 
 ### Login with new user and continue.
 ### Install and update django
@@ -165,6 +165,7 @@ to restart nginx.
 If there were any issues run `sudo tail -30 /var/log/nginx/error.log` to check the error logs.
 
 Congrats your django site should be up and running. 
+
 
 ## Bonus
 
