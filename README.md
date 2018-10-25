@@ -54,7 +54,7 @@ replace values surounded by <> with your own values
 
 `cd ~/django-apps`
 
-`django-admin startproject mysite`
+`django-admin startproject <mysite>`
 
 you can now run your development server to test your setup for development 
 
