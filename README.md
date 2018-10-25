@@ -132,7 +132,7 @@ server {
         root /home/<username>/django-apps/<mysite>;
     }
 
-    location /media {
+    location /media_root {
         root /home/<username>/django-apps/<mysite>;
     }
 
