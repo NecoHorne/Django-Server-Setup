@@ -50,10 +50,6 @@ replace values surounded by <> with your own values
 
 `pip install django`
 
-`pip install django-widget-tweaks`
-
-`pip install Pillow`
-
 `pip install django gunicorn psycopg2`
 
 `cd ~/django-apps`
