@@ -65,7 +65,7 @@ after your site has been set up and you are ready to go into production in the `
 ```
 DEBUG = False
 ...
-ALLOWED_HOSTS = [<yourIP>, <yourdomain.com>]
+ALLOWED_HOSTS = ['<yourIP>', '<yourdomain.com>']
 ...
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
@@ -95,8 +95,8 @@ After=network.target
 [Service]
 User=<username>
 Group=www-data
-WorkingDirectory=/home/<username>/django-apps/mysite
-ExecStart=/home/<username>/django-apps/env/bin/python3 /home/<username>/django-apps/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/<username>/django-apps/<mysite>.sock mysite.wsgi:application
+WorkingDirectory=/home/<username>/django-apps/<mysite>
+ExecStart=/home/<username>/django-apps/env/bin/python3 /home/<username>/django-apps/env/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/<username>/django-apps/<mysite>.sock <mysite>.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
